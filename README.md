@@ -45,7 +45,7 @@
   <!-- Nomination Form -->
   <section id="nominate" class="p-6 bg-white max-w-2xl mx-auto mt-8 rounded shadow">
     <h3 class="text-xl font-semibold text-gray-800 mb-4">Nominate a Worker</h3>
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSeLwYOURFORMID/formResponse" method="POST" target="_blank" class="space-y-4">
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdSSk0pyKlVLtg6BIvzf9bZuhDBVbVsi8i3lafM7yZu7qVz1A/viewform?usp=sharing&ouid=103571794072221015337" method="POST" target="_blank" class="space-y-4">
       <input name="entry.1234567890" type="text" placeholder="Worker's Full Name" class="w-full px-4 py-2 border border-gray-300 rounded">
       <input name="entry.0987654321" type="text" placeholder="Type of Service (e.g. Plumber, Tailor)" class="w-full px-4 py-2 border border-gray-300 rounded">
       <input name="entry.1122334455" type="text" placeholder="Phone Number" class="w-full px-4 py-2 border border-gray-300 rounded">
