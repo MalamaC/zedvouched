@@ -3,6 +3,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ZedVouched | Trusted Service Providers</title>
+  <p style="text-align: center; margin-top: 10px;">
+  A community-driven map of trusted service providers across Zambia.
+  <br>Nominate someone today to help others find reliable help near them!
+</p>
+
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
@@ -20,7 +25,7 @@
 <body>
   <header>
     <h1>ZedVouched</h1>
-    <p>Verified Service Providers in Zambia</p>
+    <p>Verified (by YOU) Service Providers in Zambia</p>
   </header>
 
   <div id="search-container">
