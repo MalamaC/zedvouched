@@ -1,93 +1,247 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZedVouched - Find Trusted Services</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script>
-    function toggleDropdown(id) {
-      const menu = document.getElementById(id);
-      menu.classList.toggle("hidden");
+  <title>ZedVouched</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      box-sizing: border-box;
     }
-  </script>
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fff9f3;
+      color: #333;
+    }
+
+    header {
+      background-color: #f27024;
+      padding: 1rem 2rem;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .cta {
+      background-color: #f9e6d5;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .cta h2 {
+      color: #f27024;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #f27024;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .iframe-container {
+      position: relative;
+      overflow: hidden;
+      padding-top: 56.25%;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .search-hero {
+      background-color: #fff3e5;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .search-hero h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #4a4a4a;
+    }
+
+    .search-hero p {
+      color: #666;
+      margin-top: 0.5rem;
+    }
+
+    .search-hero form {
+      margin-top: 1.5rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+    }
+
+    .search-hero input[type="text"] {
+      flex-grow: 1;
+      padding: 0.75rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.375rem 0 0 0.375rem;
+    }
+
+    .search-hero button {
+      background-color: #f27024;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 0 0.375rem 0.375rem 0;
+      cursor: pointer;
+    }
+
+    .search-hero button:hover {
+      background-color: #d65f1c;
+    }
+
+    .reviews-section {
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+      background-color: #f2f2f2;
+      border-radius: 8px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .reviews-section h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    .review {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .review-stars {
+      color: #fbbf24;
+    }
+
+    footer {
+      background-color: #f27024;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 font-sans">
-  <!-- Navigation bar -->
-  <nav class="bg-white shadow p-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-green-600">ZedVouched</h1>
-    <div class="relative">
-      <button onclick="toggleDropdown('categoriesDropdown')" class="text-gray-600 hover:text-green-600">Categories ▾</button>
-      <div id="categoriesDropdown" class="absolute mt-2 bg-white border rounded shadow-md hidden z-10 w-64">
-        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"><span class="text-gray-700 font-semibold">🛠️ Trades & Technical Services</span></a>
-        <a href="#" class="block px-4 py-2 text-sm text-indigo-700 hover:bg-gray-100">🎨 Creative & Design Services</a>
-        <a href="#" class="block px-4 py-2 text-sm text-teal-700 hover:bg-gray-100">🧹 Domestic & Support Services</a>
-        <a href="#" class="block px-4 py-2 text-sm text-blue-700 hover:bg-gray-100">💼 Administrative & Logistical Services</a>
-        <a href="#" class="block px-4 py-2 text-sm text-yellow-700 hover:bg-gray-100">🧑🏽‍🏫 Instructional & Skilled Coaching</a>
+<body>
+  <header>
+    <h1>ZedVouched</h1>
+    <nav>
+      <a href="#map">Service Map</a>
+      <a href="#form">Nominate</a>
+      <a href="https://wa.me/260978109185" target="_blank"><i class="fab fa-whatsapp" style="color:#25D366;"></i> WhatsApp</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="search-hero">
+      <h2>Your Map to Zambia's Trusted Service Providers</h2>
+      <p>Search, nominate, and share trusted local workers and businesses</p>
+      <form>
+        <input type="text" placeholder="Search for barbers, tailors, welders...">
+        <button type="submit">Search</button>
+      </form>
+      <p class="mt-3 text-sm text-gray-500">Help us fill this map with verified providers by nominating your trusted workers!</p>
+    </div>
+
+    <div class="cta">
+      <h2>Help us fill this map with your trusted service providers</h2>
+      <p>Nominate people you've worked with and vouch for!</p>
+      <a href="#form">Nominate Now</a>
+    </div>
+
+    <section id="map">
+      <h2>Service Provider Map</h2>
+      <div class="iframe-container">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1LQXoxhIWpbgSo7cwGqGIzcfA8jWEMM4" allowfullscreen></iframe>
       </div>
-    </div>
-    <div class="space-x-4">
-      <a href="https://wa.me/260978109185" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">WhatsApp Us</a>
-      <a href="#nominate" class="text-green-700 underline hover:text-green-800">Nominate a Worker</a>
-    </div>
-  </nav>
+    </section>
 
-  <!-- Hero Section -->
-  <section class="bg-green-50 p-6 text-center">
-    <h2 class="text-3xl font-bold text-gray-700">Your Map to Zambia's Trusted Service Providers</h2>
-    <p class="mt-2 text-gray-600">Search, nominate, and share trusted local workers and businesses</p>
-    <form class="mt-4 max-w-xl mx-auto flex">
-      <input type="text" placeholder="Search for barbers, tailors, welders..." class="flex-grow px-4 py-2 border border-gray-300 rounded-l-md">
-      <button class="bg-green-600 text-white px-6 py-2 rounded-r-md hover:bg-green-700">Search</button>
-    </form>
-    <p class="mt-3 text-sm text-gray-500">Help us fill this map with verified providers by nominating your trusted workers!</p>
-  </section>
+    <section id="form">
+      <h2>Nomination Form</h2>
+      <div class="iframe-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdSSk0pyKlVLtg6BIvzf9bZuhDBVbVsi8i3lafM7yZu7qVz1A/viewform?embedded=true" width="100%" height="600">Loading…</iframe>
+      </div>
+    </section>
 
-  <!-- Nomination Form -->
-  <section id="nominate" class="p-6 bg-white max-w-2xl mx-auto mt-8 rounded shadow">
-    <h3 class="text-xl font-semibold text-gray-800 mb-4">Nominate a Worker</h3>
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdSSk0pyKlVLtg6BIvzf9bZuhDBVbVsi8i3lafM7yZu7qVz1A/viewform?usp=sharing&ouid=103571794072221015337" method="POST" target="_blank" class="space-y-4">
-      <input name="entry.1234567890" type="text" placeholder="Worker's Full Name" class="w-full px-4 py-2 border border-gray-300 rounded">
-      <input name="entry.0987654321" type="text" placeholder="Type of Service (e.g. Plumber, Tailor)" class="w-full px-4 py-2 border border-gray-300 rounded">
-      <input name="entry.1122334455" type="text" placeholder="Phone Number" class="w-full px-4 py-2 border border-gray-300 rounded">
-      <input name="entry.6677889900" type="text" placeholder="Location (e.g. Lusaka, Kitwe)" class="w-full px-4 py-2 border border-gray-300 rounded">
-      <textarea name="entry.4455667788" placeholder="Attach photo of completed work (optional)" class="w-full px-4 py-2 border border-gray-300 rounded"></textarea>
-      <input name="entry.9988776655" type="text" placeholder="Rating" class="w-full px-4 py-2 border border-gray-300 rounded">
-      <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Submit Nomination</button>
-    </form>
-  </section>
-
-  <!-- Ratings & Reviews Section -->
-  <section class="p-6 mt-8 bg-gray-50 max-w-4xl mx-auto rounded shadow">
-    <h3 class="text-xl font-semibold text-gray-800 mb-4">Ratings & Reviews</h3>
-    <div class="space-y-6">
-      <div class="bg-white p-4 rounded shadow">
-        <div class="flex items-center justify-between mb-2">
-          <span class="font-semibold text-gray-700">Chipo Banda - Tailor</span>
-          <span class="text-yellow-500">★★★★☆</span>
+    <section class="reviews-section">
+      <h3>Ratings & Reviews</h3>
+      <div class="review">
+        <div class="review-header">
+          <span>Chipo Banda - Tailor</span>
+          <span class="review-stars">★★★★☆</span>
         </div>
-        <p class="text-gray-600 text-sm">Chipo delivers on time and her stitching is top-notch. Highly recommended in Chelstone!</p>
+        <p>Chipo delivers on time and her stitching is top-notch. Highly recommended in Chelstone!</p>
       </div>
-      <div class="bg-white p-4 rounded shadow">
-        <div class="flex items-center justify-between mb-2">
-          <span class="font-semibold text-gray-700">James Mwila - Electrician</span>
-          <span class="text-yellow-500">★★★★★</span>
+      <div class="review">
+        <div class="review-header">
+          <span>James Mwila - Electrician</span>
+          <span class="review-stars">★★★★★</span>
         </div>
-        <p class="text-gray-600 text-sm">Very reliable and always neat with his work. He fixed our power issue within the hour!</p>
+        <p>Very reliable and always neat with his work. He fixed our power issue within the hour!</p>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Google Map Embed -->
-  <section class="mt-8 max-w-5xl mx-auto px-4">
-    <h3 class="text-xl font-semibold text-gray-800 mb-4">Pinned Service Providers Map</h3>
-    <div class="aspect-w-16 aspect-h-9">
-      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1LQXoxhIWpbgSo7cwGqGIzcfA8jWEMM4" width="100%" height="480" class="rounded shadow"></iframe>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="text-center text-sm text-gray-500 p-4 mt-6">
-    © 2025 ZedVouched. All rights reserved. | <a href="#" class="text-blue-500 underline">Privacy Disclaimer</a>
+  <footer>
+    <p>&copy; 2025 ZedVouched | Built with ❤️ in Zambia</p>
   </footer>
 </body>
 </html>
+
