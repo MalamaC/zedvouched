@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="space-x-4">
-      <a href="https://wa.me/260YOURNUMBERHERE" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">WhatsApp Us</a>
+      <a href="https://wa.me/260978109185" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">WhatsApp Us</a>
       <a href="#nominate" class="text-green-700 underline hover:text-green-800">Nominate a Worker</a>
     </div>
   </nav>
