@@ -212,11 +212,24 @@
       </div>
     </section>
 
-    <section id="form">
-      <h2>Nomination Form</h2>
-      <div class="iframe-container">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdSSk0pyKlVLtg6BIvzf9bZuhDBVbVsi8i3lafM7yZu7qVz1A/viewform?embedded=true" width="100%" height="600">Loading…</iframe>
-      </div>
+      <form class="custom-form" name="submit-to-google-sheet">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="service">Type of Service</label>
+        <input type="text" id="service" name="service" required />
+
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" required />
+
+        <label for="comments">Why do you recommend them?</label>
+        <textarea id="comments" name="comments" rows="4" required></textarea>
+
+        <button type="submit">Submit Nomination</button>
+      </form>
     </section>
 
     <section class="reviews-section">
