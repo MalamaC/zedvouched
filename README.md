@@ -43,7 +43,7 @@
   <div id="footer-comment">
     📍 Help us fill this map with your verified service provider! <br />
     Visit our <a href="https://facebook.com/zedvouched" target="_blank">Facebook page</a> to nominate someone.<br /><br />
-    <a class="whatsapp-button" href="https://wa.me/260971234567" target="_blank">💬 Chat with us on WhatsApp</a>
+    <a class="whatsapp-button" href="https://wa.me/260978109185" target="_blank">💬 Chat with us on WhatsApp</a>
   </div>
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
