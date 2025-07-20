@@ -50,8 +50,8 @@
       <input name="entry.0987654321" type="text" placeholder="Type of Service (e.g. Plumber, Tailor)" class="w-full px-4 py-2 border border-gray-300 rounded">
       <input name="entry.1122334455" type="text" placeholder="Phone Number" class="w-full px-4 py-2 border border-gray-300 rounded">
       <input name="entry.6677889900" type="text" placeholder="Location (e.g. Lusaka, Kitwe)" class="w-full px-4 py-2 border border-gray-300 rounded">
-      <textarea name="entry.4455667788" placeholder="Why do you recommend them?" class="w-full px-4 py-2 border border-gray-300 rounded"></textarea>
-      <input name="entry.9988776655" type="text" placeholder="Link to photo of completed work (optional)" class="w-full px-4 py-2 border border-gray-300 rounded">
+      <textarea name="entry.4455667788" placeholder="Attach photo of completed work (optional)" class="w-full px-4 py-2 border border-gray-300 rounded"></textarea>
+      <input name="entry.9988776655" type="text" placeholder="Rating" class="w-full px-4 py-2 border border-gray-300 rounded">
       <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Submit Nomination</button>
     </form>
   </section>
