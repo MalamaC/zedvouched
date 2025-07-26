@@ -86,7 +86,7 @@
 
     .search-bar button {
       padding: 10px 20px;
-      background-color: #edbb8a;
+      background-color:  ;
       color: black;
       border-radius: 0 20px 20px 0;
       border: none;
@@ -145,7 +145,7 @@
   </div>
 
   <nav>
-    <img class="logo" src="images/ZedV%20logo.png" alt="ZedVouched">
+    <img class="logo" src="images/zedvouched_logo.png" alt="ZedVouched">
     <div class="nav-links">
       <div class="dropdown">
         Technical Services
@@ -197,7 +197,7 @@
     <a class="cta-button" href="https://wa.me/260977000000" target="_blank">WhatsApp</a>
   </nav>
 
-<div class="search-bar" style="padding: 0 30px;">
+<div class="-bar" style="padding: 0 30px;">
   <input type="text" placeholder="Search local workers and businesses trusted and vouched for by Zambians"
     style="padding: 10px; width: 100%; border-radius: 20px 0 0 20px; border: none; outline: none;" />
   <button style="padding: 10px 20px; background-color: #edbb8a; color: black; border-radius: 0 20px 20px 0; border: none; cursor: pointer;">
