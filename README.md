@@ -27,7 +27,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: white;
+      background: #f9a769;
       padding: 15px 30px;
       border-radius: 40px 40px 40px 40px;
     }
@@ -86,7 +86,7 @@
 
     .search-bar button {
       padding: 10px 20px;
-      background-color: #2e8b57;
+      background-color: #edbb8a;
       color: white;
       border-radius: 0 20px 20px 0;
       border: none;
