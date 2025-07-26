@@ -170,12 +170,15 @@
   </div>
 
   <section class="form-section">
-    <h2 style="text-align:center;">Get In Touch</h2>
+    <h2 style="text-align:center;">Help us map out verified providers by nominating your trusted workers</h2>
     <form>
       <input type="text" placeholder="Full Name" required/>
-      <input type="email" placeholder="Email Address" required/>
+      <input type="servicetype" placeholder="Type of Service" required/>
+      <input type="number" placeholder="Phone Number" required/>
+      <input type="location" placeholder="Location (e.g. Lusaka, Kitwe)" required/>
+      <input type="photo" placeholder="Attach photo of completed work if applicable" required/>
       <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" style="background-color:#2e8b57;color:white;border:none;padding:10px;border-radius:20px;">Submit</button>
+      <button type="nominate" style="background-color:#2e8b57;color:white;border:none;padding:10px;border-radius:20px;">Nominate</button>
     </form>
   </section>
 
