@@ -216,7 +216,7 @@
   </nav>
 
   <div class="search-bar">
-    <input type="text" placeholder="Search local workers and businesses trusted and vouched for by Zambians" />
+    <input type="text" placeholder="Search local workers and businesses trusted and vouched for by Zambians..." />
     <button>Search</button>
   </div>
 
