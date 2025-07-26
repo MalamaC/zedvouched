@@ -1,29 +1,28 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>[ZedVouched Platform]</title>
+  <title>ZedVouched</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #FF6600;
+      background-color: #1a1a4b;
       color: white;
     }
 
-    header {
-      text-align: center;
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       padding: 40px 20px;
+      background-color: #FF6600;
     }
 
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.3em;
-      opacity: 0.9;
+    .header img {
+      height: 70px;
+      width: auto;
     }
 
     nav {
@@ -35,9 +34,7 @@
     }
 
     .logo {
-      font-size: 1.5em;
-      font-weight: bold;
-      color: #1a1a4b;
+      height: 40px;
     }
 
     .nav-links {
@@ -98,7 +95,7 @@
     }
 
     .cta-button {
-      background-color: #2e8b57;
+      background-color: #25D366;
       color: white;
       padding: 8px 18px;
       border-radius: 20px;
@@ -144,13 +141,12 @@
 </head>
 <body>
 
-  <header>
-    <h1>[ZedVouched]</h1>
-    <p>[Empowering Trustworthy Connections]</p>
-  </header>
+  <div class="header">
+    <img src="images/ZedV%20logo.png" alt="ZedVouched Logo">
+  </div>
 
   <nav>
-    <div class="logo">ZedVouched</div>
+    <img class="logo" src="images/ZedV%20logo.png" alt="ZedVouched">
     <div class="nav-links">
       <a href="#">Home</a>
       <div class="dropdown">
@@ -166,16 +162,16 @@
       <a href="#">Contact</a>
       <a href="#">Login</a>
     </div>
-    <a class="cta-button" href="#">Chat with us on Whatsapp</a>
+    <a class="cta-button" href="https://wa.me/260977000000" target="_blank">Chat with us on WhatsApp</a>
   </nav>
 
   <div class="search-bar">
-    <input type="text" placeholder="Search for builders, barbers, tailors, welders...."/>
+    <input type="text" placeholder="Help us map out verified providers by nominating your trusted workers"/>
     <button>Search</button>
   </div>
 
   <section class="form-section">
-    <h2 style="text-align:center;">Help us map out verified providers by nominating your trusted workers</h2>
+    <h2 style="text-align:center;">Get In Touch</h2>
     <form>
       <input type="text" placeholder="Full Name" required/>
       <input type="email" placeholder="Email Address" required/>
@@ -191,7 +187,7 @@
   </iframe>
 
   <footer>
-    &copy; [2025] ZedVouched | Built with ❤️ in Zambia
+    &copy; 2025 ZedVouched | Built with ❤️ in Zambia
   </footer>
 
 </body>
