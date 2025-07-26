@@ -87,15 +87,15 @@
     .search-bar button {
       padding: 10px 20px;
       background-color: #edbb8a;
-      color: white;
-      border-radius: 0 20px 20px 0;
+      color: black;
+      border-radius: 20px 20px 20px 20px;
       border: none;
       cursor: pointer;
     }
 
     .cta-button {
       background-color: #25D366;
-      color: white;
+      color: black;
       padding: 8px 18px;
       border-radius: 20px;
       text-decoration: none;
