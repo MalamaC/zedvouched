@@ -19,7 +19,7 @@
     }
 
     .header img {
-      height: 140px;
+      height: 440px;
       width: auto;
     }
 
@@ -146,13 +146,24 @@
   <nav>
     <img class="logo" src="images/ZedV%20logo.png" alt="ZedVouched">
     <div class="nav-links">
-      <a href="#">Home</a>
       <div class="dropdown">
-        Services
+        Technical Services
         <div class="dropdown-content">
-          <a href="#">Domestic Help</a>
-          <a href="#">Home Repairs</a>
-          <a href="#">Tutoring</a>
+          <a href="#">Electrician</a>
+          <a href="#">Plumber</a>
+          <a href="#">Mechanic</a>
+          <a href="#">Carpenter</a>
+          <a href="#">Borehole Siting</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        Design Services
+        <div class="dropdown-content">
+          <a href="#">Tailor</a>
+          <a href="#">Graphic Designer</a>
+          <a href="#">Architect</a>
+          <a href="#">Hairdresser</a>
+          <a href="#">Videographer</a>
         </div>
       </div>
       <a href="#">Blog</a>
