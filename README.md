@@ -166,10 +166,32 @@
           <a href="#">Videographer</a>
         </div>
       </div>
-      <a href="#">Blog</a>
-      <a href="#">Careers</a>
-      <a href="#">Contact</a>
-      <a href="#">Login</a>
+      <div class="dropdown">
+        Domestic & Support
+        <div class="dropdown-content">
+          <a href="#">Gardener</a>
+          <a href="#">Maid</a>
+          <a href="#">Chef</a>
+          <a href="#">Nanny</a>
+          <a href="#">Tutor</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        Administrative
+        <div class="dropdown-content">
+          <a href="#">Legal Services</a>
+          <a href="#">Taxation Agent</a>
+          <a href="#">Web Designer</a>
+          <a href="#">Resume Compiler</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        Logistics
+        <div class="dropdown-content">
+          <a href="#">Driver</a>
+          <a href="#">Courier Service</a>
+        </div>
+      </div>
     </div>
     <a class="cta-button" href="https://wa.me/260977000000" target="_blank">Chat with us on WhatsApp</a>
   </nav>
