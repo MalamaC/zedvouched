@@ -175,7 +175,7 @@
   </div>
 
   <section class="form-section">
-    <h2 style="text-align:center;">Get In Touch</h2>
+    <h2 style="text-align:center;">Help us map out verified providers by nominating your trusted workers</h2>
     <form>
       <input type="text" placeholder="Full Name" required/>
       <input type="email" placeholder="Email Address" required/>
