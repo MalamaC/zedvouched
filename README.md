@@ -140,7 +140,7 @@
 <body>
 
   <div class="header">
-    <img src="images/zedvouched_logo" alt="ZedVouched Logo">
+    <img src="images/zedvouched_logo.png" alt="ZedVouched Logo">
   </div>
 
   <nav>
