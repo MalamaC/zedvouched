@@ -29,7 +29,7 @@
       align-items: center;
       background: white;
       padding: 15px 30px;
-      border-radius: 20px 0 0 20px;
+      border-radius: 40px 40px 40px 40px;
     }
 
     .logo {
