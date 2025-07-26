@@ -29,7 +29,7 @@
       align-items: center;
       background: #f9a769;
       padding: 15px 30px;
-      border-radius: 45px 45px 45px 45px;
+      border-radius: 45px;
     }
 
     .logo {
@@ -70,15 +70,15 @@
     }
 
     .search-bar {
-      margin: 20px auto;
-      max-width: 500px;
       display: flex;
       justify-content: center;
+      padding: 0 30px;
+      margin: 20px 0;
     }
 
     .search-bar input {
       padding: 10px;
-      width: 100%;
+      flex: 1;
       border-radius: 20px 0 0 20px;
       border: none;
       outline: none;
@@ -86,7 +86,7 @@
 
     .search-bar button {
       padding: 10px 20px;
-      background-color:  ;
+      background-color: #edbb8a;
       color: black;
       border-radius: 0 20px 20px 0;
       border: none;
@@ -130,6 +130,29 @@
       margin-top: 30px;
     }
 
+    .map-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 30px;
+    }
+
+    .map-section h2 {
+      font-size: 1.8em;
+      font-weight: 600;
+      color: white;
+      margin: 0;
+      width: 30%;
+      padding-right: 20px;
+    }
+
+    .map-section iframe {
+      width: 70%;
+      height: 300px;
+      border-radius: 10px;
+      border: none;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -147,8 +170,7 @@
   <nav>
     <img class="logo" src="images/zedvouched_logo.png" alt="ZedVouched">
     <div class="nav-links">
-      <div class="dropdown">
-        Technical Services
+      <div class="dropdown">Technical Services
         <div class="dropdown-content">
           <a href="#">Electrician</a>
           <a href="#">Plumber</a>
@@ -157,8 +179,7 @@
           <a href="#">Borehole Siting</a>
         </div>
       </div>
-      <div class="dropdown">
-        Design Services
+      <div class="dropdown">Design Services
         <div class="dropdown-content">
           <a href="#">Tailor</a>
           <a href="#">Graphic Designer</a>
@@ -167,8 +188,7 @@
           <a href="#">Videographer</a>
         </div>
       </div>
-      <div class="dropdown">
-        Domestic & Support
+      <div class="dropdown">Domestic & Support
         <div class="dropdown-content">
           <a href="#">Gardener</a>
           <a href="#">Maid</a>
@@ -177,8 +197,7 @@
           <a href="#">Tutor</a>
         </div>
       </div>
-      <div class="dropdown">
-        Administrative
+      <div class="dropdown">Administrative
         <div class="dropdown-content">
           <a href="#">Legal Services</a>
           <a href="#">Taxation Agent</a>
@@ -186,8 +205,7 @@
           <a href="#">Resume Compiler</a>
         </div>
       </div>
-      <div class="dropdown">
-        Logistics
+      <div class="dropdown">Logistics
         <div class="dropdown-content">
           <a href="#">Driver</a>
           <a href="#">Courier Service</a>
@@ -197,13 +215,10 @@
     <a class="cta-button" href="https://wa.me/260977000000" target="_blank">WhatsApp</a>
   </nav>
 
-<div class="-bar" style="padding: 0 30px;">
-  <input type="text" placeholder="Search local workers and businesses trusted and vouched for by Zambians"
-    style="padding: 10px; width: 100%; border-radius: 20px 0 0 20px; border: none; outline: none;" />
-  <button style="padding: 10px 20px; background-color: #edbb8a; color: black; border-radius: 0 20px 20px 0; border: none; cursor: pointer;">
-    Search
-  </button>
-</div>
+  <div class="search-bar">
+    <input type="text" placeholder="Search local workers and businesses trusted and vouched for by Zambians" />
+    <button>Search</button>
+  </div>
 
   <section class="form-section">
     <h2 style="text-align:center;">Help us map out verified providers by nominating your trusted workers</h2>
@@ -214,24 +229,17 @@
       <input type="location" placeholder="Location (e.g. Lusaka, Kitwe)" required/>
       <input type="photo" placeholder="Attach photo of completed work if applicable" required/>
       <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="nominate" style="background-color:#2e8b57;color:white;border:none;padding:10px;border-radius:20px;">Nominate</button>
+      <button type="submit" style="background-color:#2e8b57;color:white;border:none;padding:10px;border-radius:20px;">Nominate</button>
     </form>
   </section>
 
-<div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 30px;">
-  <div style="width: 30%; padding-right: 20px;">
-    <h2 style="font-size: 1.8em; font-weight: 600; color: white; margin: 0;">
-      Your Map to Zambia's Trusted Service Providers
-    </h2>
-  </div>
-  <div style="width: 70%;">
+  <div class="map-section">
+    <h2>Your Map to Zambia's Trusted Service Providers</h2>
     <iframe 
       src="https://www.google.com/maps/d/embed?mid=1LQXoxhIWpbgSo7cwGqGIzcfA8jWEMM4&ehbc=2E312F" 
-      style="width: 100%; height: 300px; border: 0; border-radius: 10px;" 
       allowfullscreen="" loading="lazy">
     </iframe>
   </div>
-</div>
 
   <footer>
     &copy; 2025 ZedVouched | Built with ❤️ in Zambia
