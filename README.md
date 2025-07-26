@@ -102,27 +102,30 @@
       font-weight: 600;
     }
 
-    .form-section {
+    .form-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
       background-color: #ffffff10;
-      padding: 40px 20px;
+      padding: 40px 30px;
       margin: 20px;
       border-radius: 10px;
     }
-
-    .form-section form {
+    
+    .form-block h2 {
+      width: 30%;
+      font-size: 1.8em;
+      font-weight: 600;
+      color: white;
+      margin: 0;
+      padding-right: 20px;
+    }
+    
+    .form-block form {
+      width: 70%;
       display: grid;
       gap: 20px;
-      max-width: 500px;
-      margin: auto;
     }
-
-    .form-section input, .form-section textarea {
-      padding: 12px;
-      border-radius: 6px;
-      border: none;
-      font-size: 1em;
-    }
-
     iframe {
       width: 100%;
       height: 300px;
@@ -220,18 +223,18 @@
     <button>Search</button>
   </div>
 
-  <section class="form-section">
-    <h2 style="text-align:center;">Help us map out verified providers by nominating your trusted workers</h2>
-    <form>
-      <input type="text" placeholder="Full Name" required/>
-      <input type="servicetype" placeholder="Type of Service" required/>
-      <input type="number" placeholder="Phone Number" required/>
-      <input type="location" placeholder="Location (e.g. Lusaka, Kitwe)" required/>
-      <input type="photo" placeholder="Attach photo of completed work if applicable" required/>
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" style="background-color:#2e8b57;color:white;border:none;padding:10px;border-radius:20px;">Nominate</button>
-    </form>
-  </section>
+<div class="form-block">
+  <h2>Let's fill the Zambian map, together</h2>
+  <form>
+    <input type="text" placeholder="Full Name" required/>
+    <input type="servicetype" placeholder="Type of Service" required/>
+    <input type="number" placeholder="Phone Number" required/>
+    <input type="location" placeholder="Location (e.g. Lusaka, Kitwe)" required/>
+    <input type="photo" placeholder="Attach photo of completed work if applicable" required/>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" style="background-color:#2e8b57;color:white;border:none;padding:10px;border-radius:20px;">Nominate</button>
+  </form>
+  </div>
 
   <div class="map-section">
     <h2>Your Map to Zambia's Trusted Service Providers</h2>
