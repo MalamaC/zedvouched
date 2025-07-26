@@ -29,6 +29,7 @@
       align-items: center;
       background: white;
       padding: 15px 30px;
+      border-radius: 20px 0 0 20px;
     }
 
     .logo {
@@ -37,7 +38,7 @@
 
     .nav-links {
       display: flex;
-      gap: 20px;
+      gap: 15px;
     }
 
     .nav-links a, .dropdown {
