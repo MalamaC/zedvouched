@@ -19,7 +19,7 @@
     }
 
     .header img {
-      height: 440px;
+      height: 355px;
       width: auto;
     }
 
