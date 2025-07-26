@@ -19,7 +19,7 @@
     }
 
     .header img {
-      height: 355px;
+      height: 300px;
       width: auto;
     }
 
@@ -194,7 +194,7 @@
         </div>
       </div>
     </div>
-    <a class="cta-button" href="https://wa.me/260977000000" target="_blank">Chat with us on WhatsApp</a>
+    <a class="cta-button" href="https://wa.me/260977000000" target="_blank">WhatsApp</a>
   </nav>
 
   <div class="search-bar">
