@@ -88,7 +88,7 @@
       padding: 10px 20px;
       background-color: #edbb8a;
       color: black;
-      border-radius: 20px 20px 20px 20px;
+      border-radius: 0 20px 20px 0;
       border: none;
       cursor: pointer;
     }
