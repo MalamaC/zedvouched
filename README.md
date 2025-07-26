@@ -33,7 +33,7 @@
     }
 
     .logo {
-      height: 40px;
+      height: 100px;
     }
 
     .nav-links {
@@ -78,7 +78,7 @@
 
     .search-bar input {
       padding: 10px;
-      width: 80%;
+      width: 100%;
       border-radius: 20px 0 0 20px;
       border: none;
       outline: none;
