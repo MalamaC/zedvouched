@@ -197,10 +197,13 @@
     <a class="cta-button" href="https://wa.me/260977000000" target="_blank">WhatsApp</a>
   </nav>
 
-  <div class="search-bar">
-    <input type="text" placeholder="Search local workers and businesses trusted and vouched for by Zambians"/>
-    <button>Search</button>
-  </div>
+<div class="search-bar" style="padding: 0 30px;">
+  <input type="text" placeholder="Search local workers and businesses trusted and vouched for by Zambians"
+    style="padding: 10px; width: 100%; border-radius: 20px 0 0 20px; border: none; outline: none;" />
+  <button style="padding: 10px 20px; background-color: #edbb8a; color: black; border-radius: 0 20px 20px 0; border: none; cursor: pointer;">
+    Search
+  </button>
+</div>
 
   <section class="form-section">
     <h2 style="text-align:center;">Help us map out verified providers by nominating your trusted workers</h2>
@@ -215,11 +218,20 @@
     </form>
   </section>
 
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30689.456387045594!2d28.2873581!3d-15.3875257!2m3!1f0!2f0!3f0!3m2!
-    1i1024!2i768!4f13.1!3m3!1m2!1s0x19409136f68e1e55%3A0xd3076fdb6a192709!2sLusaka!5e0!3m2!1sen!2szm!4v1681130269695!5m2!1sen!2szm"
-    allowfullscreen="" loading="lazy">
-  </iframe>
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 30px;">
+  <div style="width: 30%; padding-right: 20px;">
+    <h2 style="font-size: 1.8em; font-weight: 600; color: white; margin: 0;">
+      Your Map to Zambia's Trusted Service Providers
+    </h2>
+  </div>
+  <div style="width: 70%;">
+    <iframe 
+      src="https://www.google.com/maps/d/embed?mid=1LQXoxhIWpbgSo7cwGqGIzcfA8jWEMM4&ehbc=2E312F" 
+      style="width: 100%; height: 300px; border: 0; border-radius: 10px;" 
+      allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+</div>
 
   <footer>
     &copy; 2025 ZedVouched | Built with ❤️ in Zambia
