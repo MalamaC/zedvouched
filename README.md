@@ -168,7 +168,7 @@
   </div>
 
   <nav>
-    <img class="logo" src="images/zedvouched_logo.png" alt="ZedVouched">
+    <img class="logo" src="images/logo_only.png" alt="ZedVouched">
     <div class="nav-links">
       <div class="dropdown">Technical Services
         <div class="dropdown-content">
