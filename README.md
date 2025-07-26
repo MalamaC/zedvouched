@@ -166,11 +166,11 @@
       <a href="#">Contact</a>
       <a href="#">Login</a>
     </div>
-    <a class="cta-button" href="#">Request a Demo</a>
+    <a class="cta-button" href="#">Chat with us on Whatsapp</a>
   </nav>
 
   <div class="search-bar">
-    <input type="text" placeholder="Search for trusted providers..."/>
+    <input type="text" placeholder="Search for builders, barbers, tailors, welders...."/>
     <button>Search</button>
   </div>
 
