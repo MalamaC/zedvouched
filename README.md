@@ -29,7 +29,7 @@
       align-items: center;
       background: #f9a769;
       padding: 15px 30px;
-      border-radius: 40px 40px 40px 40px;
+      border-radius: 45px 45px 45px 45px;
     }
 
     .logo {
@@ -198,7 +198,7 @@
   </nav>
 
   <div class="search-bar">
-    <input type="text" placeholder="Help us map out verified providers by nominating your trusted workers"/>
+    <input type="text" placeholder="Search local workers and businesses trusted and vouched for by Zambians"/>
     <button>Search</button>
   </div>
 
