@@ -49,7 +49,7 @@
   <!-- Header -->
   <header class="flex items-center justify-between py-4 px-6 bg-transparent">
     <div class="flex items-center space-x-3">
-      <img src="img/zedvouched_logo.png" alt="ZedVouched" class="h-8 w-8">
+      <img src="images/zedvouched_logo.png" alt="ZedVouched" class="h-8 w-8">
       <span class="text-black text-lg font-semibold">ZedVouched</span>
     </div>
     <nav class="hidden lg:flex items-center space-x-6 text-base font-medium">
