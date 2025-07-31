@@ -2,7 +2,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZedVouched</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     /* Custom CSS variables */
@@ -49,7 +48,7 @@
   <!-- Header -->
   <header class="flex items-center justify-between py-4 px-6 bg-transparent">
     <div class="flex items-center space-x-3">
-      <img src="images/logo_nobackground.png" alt="ZedVouched" class="h-8 w-20">
+      <img src="images/logo_nobackground.png" alt="ZedVouched" class="h-20 w-50">
     </div>
     <nav class="hidden lg:flex items-center space-x-6 text-base font-medium">
       <div class="relative group">
