@@ -76,7 +76,7 @@
   <section class="flex flex-col lg:flex-row items-start px-6 lg:px-24 pt-12 animate-fade">
     <!-- Hero Text -->
     <div class="lg:w-1/2 mb-12 lg:mb-0">
-      <h1 class="text-black text-5xl font-bold leading-tight mb-6">Let’s fill the Zambian map, together</h1>
+      <h1 class="text-black text-10xl font-bold leading-tight mb-6">Let’s fill the Zambian map, together</h1>
       <blockquote class="bg-semi-transparent-card p-4 rounded mb-6 max-w-md text-gray-800">Search local workers and businesses trusted and vouched for by Zambians…</blockquote>
       <button class="btn-green text-white px-6 py-3 rounded shadow">Search</button>
     </div>
@@ -105,7 +105,7 @@
 
   <!-- Map Section Title -->
   <section class="px-6 lg:px-24 pt-16 animate-fade">
-    <h2 class="text-black text-5xl font-bold mb-6">Your Map to Zambia’s Trusted Service Providers</h2>
+    <h2 class="text-black text-10xl font-bold mb-12">Your Map to Zambia’s Trusted Service Providers</h2>
     <div class="rounded-lg overflow-hidden shadow-lg">
       <iframe src="https://www.google.com/maps/d/embed?mid=1LQXoxhIWpbgSo7cwGqGIzcfA8jWEMM4&ehbc=2E312F" width="100%" height="480" class="block"></iframe>
     </div>
