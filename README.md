@@ -1,193 +1,119 @@
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ZedVouched – Trusted Local Service Providers</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
-    rel="stylesheet"
-  />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZedVouched</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Base & Typography */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    /* Custom CSS variables */
+    :root {
+      --orange-bg: #F27024;
+      --orange-grad1: #FF8A00;
+      --orange-grad2: #FF5E00;
+      --btn-green: #2E7D32;
+      --btn-green-h: #1B5E20;
+      --text-black: #222222;
+      --text-gray: #666666;
+      --sec-bg: #FEF3E5;
+      --card-bg: #FFFFFF;
+      --reviews-bg: #F2F2F2;
+    }
     body {
       font-family: 'Inter', sans-serif;
-      color: #333;
-      background: #f9f9f9;
-      line-height: 1.6;
+      background: var(--orange-bg);
+      background: linear-gradient(135deg, var(--orange-grad1), var(--orange-grad2));
+      color: var(--text-black);
     }
-    a { text-decoration: none; }
-    img { display: block; max-width: 100%; }
-
-    /* Header */
-    header {
-      background: #006600;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    .input, .textarea {
+      border: 1px solid #ccc;
+      border-radius: 6px;
     }
-    header img { height: 40px; }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
+    .btn-green {
+      background-color: var(--btn-green);
+      transition: background-color 0.3s;
     }
-    nav a {
-      color: #fff;
-      font-weight: 600;
-      transition: opacity 0.2s;
+    .btn-green:hover {
+      background-color: var(--btn-green-h);
     }
-    nav a:hover { opacity: 0.8; }
-
-    /* Hero */
-    .hero {
-      background: #004d00 url('images/hero-bg.jpg') center/cover no-repeat;
-      color: #fff;
-      text-align: center;
-      padding: 6rem 1rem;
+    .animate-fade {
+      animation: fadeIn 0.8s ease-in-out;
     }
-    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
-    .hero p {
-      font-size: 1.125rem;
-      max-width: 600px;
-      margin: 0 auto 2rem;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    .hero .cta {
-      background: #ff8c00;
-      color: #fff;
-      padding: 0.75rem 2rem;
-      border-radius: 5px;
-      font-size: 1rem;
-      font-weight: 600;
-      transition: background 0.2s;
-    }
-    .hero .cta:hover { background: #e67600; }
-
-    /* Sections */
-    section {
-      padding: 4rem 1rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .section-title {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      color: #006600;
-    }
-
-    /* Card Grid */
-    .card-grid {
-      display: grid;
-      gap: 1.5rem;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-    .card {
-      background: #fff;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
-    }
-    .card:hover { transform: translateY(-5px); }
-    .card img { height: 180px; object-fit: cover; }
-    .card-content {
-      padding: 1rem;
-    }
-    .card-content h3 {
-      margin-bottom: 0.5rem;
-      color: #006600;
-      font-size: 1.25rem;
-    }
-    .card-content p { color: #555; font-size: 0.95rem; }
-
-    /* Map Embed */
-    .map-container {
-      position: relative;
-      width: 100%;
-      padding-top: 56.25%; /* 16:9 aspect ratio */
-    }
-    .map-container iframe {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      border: 0;
-    }
-
-    /* Footer */
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-    }
-    footer a { color: #ff8c00; }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="images/zedvouched_logo.png" alt="ZedVouched Logo" />
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#map">Find a Provider</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <!-- Header -->
+  <header class="flex items-center justify-between py-4 px-6 bg-transparent">
+    <div class="flex items-center space-x-3">
+      <img src="logo.png" alt="ZedVouched" class="h-8 w-8">
+      <span class="text-black text-lg font-semibold">ZedVouched</span>
+    </div>
+    <nav class="hidden lg:flex items-center space-x-6 text-base font-medium">
+      <div class="relative group">
+        <button class="flex items-center space-x-1">Technical Services <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg></button>
+        <!-- dropdown placeholder -->
+      </div>
+      <div class="relative group">
+        <button class="flex items-center space-x-1">Design Services <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg></button>
+      </div>
+      <div class="relative group">
+        <button class="flex items-center space-x-1">Domestic & Support <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg></button>
+      </div>
+      <div class="relative group">
+        <button class="flex items-center space-x-1">Administrative <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg></button>
+      </div>
+      <div class="relative group">
+        <button class="flex items-center space-x-1">Logistics <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg></button>
+      </div>
+      <a href="https://wa.me/260978109185" class="ml-6 px-4 py-2 bg-green-700 text-white rounded shadow hover:bg-green-800">WhatsApp</a>
     </nav>
+    <button class="lg:hidden px-2 py-1 bg-white rounded"><svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
   </header>
 
-  <section class="hero">
-    <h1>Trusted Local Service Providers</h1>
-    <p>Connecting you with verified professionals across Zambia. Quality service you can rely on, right in your community.</p>
-    <a href="#services" class="cta">Explore Services</a>
-  </section>
-
-  <section id="services">
-    <h2 class="section-title">Our Services</h2>
-    <div class="card-grid">
-      <div class="card">
-        <img src="images/plumber.jpg" alt="Plumbing Service" />
-        <div class="card-content">
-          <h3>Plumbing</h3>
-          <p>Expert plumbers for repairs, installations, and maintenance.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="images/electrician.jpg" alt="Electrical Service" />
-        <div class="card-content">
-          <h3>Electrical</h3>
-          <p>Professional electricians ensuring safe and efficient solutions.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="images/carpentry.jpg" alt="Carpentry Service" />
-        <div class="card-content">
-          <h3>Carpentry</h3>
-          <p>Skilled carpenters for customized woodwork and repairs.</p>
-        </div>
+  <!-- Main Hero + Form -->
+  <section class="flex flex-col lg:flex-row items-start px-6 lg:px-24 pt-12 animate-fade">
+    <!-- Hero Text -->
+    <div class="lg:w-1/2 mb-12 lg:mb-0">
+      <h1 class="text-black text-5xl font-bold leading-tight mb-6">Let’s fill the Zambian map, together</h1>
+      <blockquote class="bg-semi-transparent-card p-4 rounded mb-6 max-w-md text-gray-800">Search local workers and businesses trusted and vouched for by Zambians…</blockquote>
+      <button class="btn-green text-white px-6 py-3 rounded shadow">Search</button>
+    </div>
+    <!-- Nomination Form -->
+    <div class="lg:w-1/2 px-4">
+      <div class="bg-sec-bg p-6 rounded-lg shadow-lg animate-fade max-w-md">
+        <h2 class="text-xl font-semibold text-black mb-4">Nominate a Provider</h2>
+        <form action="https://formsubmit.co/your@email.com" method="POST" enctype="multipart/form-data">
+          <label class="block text-sm font-medium text-black mb-1">Full Name</label>
+          <input type="text" name="name" class="input w-full p-2 mb-4" placeholder="e.g. Jane Doe" required>
+          <label class="block text-sm font-medium text-black mb-1">Type of Service</label>
+          <input type="text" name="service" class="input w-full p-2 mb-4" placeholder="e.g. Tailor" required>
+          <label class="block text-sm font-medium text-black mb-1">Phone Number</label>
+          <input type="tel" name="phone" class="input w-full p-2 mb-4" placeholder="e.g. +2609…" required>
+          <label class="block text-sm font-medium text-black mb-1">Location (e.g. Lusaka, Kitwe)</label>
+          <input type="text" name="location" class="input w-full p-2 mb-4" placeholder="Your Area" required>
+          <label class="block text-sm font-medium text-black mb-1">Attach Photo (optional)</label>
+          <input type="file" name="photo" class="w-full mb-4" accept="image/*">
+          <label class="block text-sm font-medium text-black mb-1">Your Message</label>
+          <textarea name="message" rows="4" class="textarea w-full p-2 mb-4" placeholder="Why do you vouch for them?"></textarea>
+          <button type="submit" class="btn-green w-full text-white py-3 rounded">Nominate</button>
+        </form>
       </div>
     </div>
   </section>
 
-  <section id="map">
-    <h2 class="section-title">Find a Provider Near You</h2>
-    <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps/d/embed?mid=1LQXoxhIWpbgSo7cwGqGIzcfA8jWEMM4&ehbc=2E312F"
-        width="640"
-        height="480"
-      ></iframe>
+  <!-- Map Section Title -->
+  <section class="px-6 lg:px-24 pt-16 animate-fade">
+    <h2 class="text-black text-3xl font-semibold mb-6">Your Map to Zambia’s Trusted Service Providers</h2>
+    <div class="rounded-lg overflow-hidden shadow-lg">
+      <iframe src="https://www.google.com/maps/d/embed?mid=1LQXoxhIWpbgSo7cwGqGIzcfA8jWEMM4&ehbc=2E312F" width="100%" height="480" class="block"></iframe>
     </div>
   </section>
 
-  <footer id="contact">
-    <p>&copy; 2025 ZedVouched. All rights reserved.</p>
-    <p>
-      <a href="mailto:info@zedvouched.com">info@zedvouched.com</a>
-    </p>
-  </footer>
+  <!-- Footer -->
+  <footer class="mt-16 px-6 lg:px-24 py-6 text-center text-gray-800 text-sm animate-fade">&copy; 2025 ZedVouched | Built with ❤️ in Zambia</footer>
 </body>
 </html>
