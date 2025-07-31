@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -110,7 +109,7 @@
           <label class="block text-sm font-medium text-black mb-1">Attach Photo (optional)</label>
           <input type="file" name="photo" class="w-full mb-4" accept="image/*">
           <label class="block text-sm font-medium text-black mb-1">Your Message</label>
-          <textarea name="message" rows="4" class="textarea w-full p-2 mb-4" placeholder="Why do you vouch for them?"> ```Removing the stray quote and ensuring proper two-column Flex container setup for the map section.```</textarea>
+          <textarea name="message" rows="4" class="textarea w-full p-2 mb-4" placeholder="Why do you vouch for them?">
           <button type="submit" class="btn-green w-full text-white py-3 rounded">Nominate</button>
         </form>
       </div>
