@@ -49,7 +49,7 @@
   <!-- Header -->
   <header class="flex items-center justify-between py-4 px-6 bg-transparent">
     <div class="flex items-center space-x-3">
-      <img src="images/zedvouched_logo.png" alt="ZedVouched" class="h-8 w-8">>
+      <img src="images/zedvouched_logo.png" alt="ZedVouched" class="h-8 w-8">
     </div>
     <nav class="hidden lg:flex items-center space-x-6 text-base font-medium">
       <div class="relative group">
@@ -86,14 +86,14 @@
       <div class="bg-sec-bg p-6 rounded-lg shadow-lg animate-fade max-w-md">
         <h2 class="text-xl font-semibold text-black mb-4">Nominate a Provider</h2>
         <form action="https://formsubmit.co/your@email.com" method="POST" enctype="multipart/form-data">
-          <label class="block text-sm font-medium text-black mb-1">Full Name</label>
-          <input type="text" name="name" class="input w-full p-2 mb-4" placeholder="e.g. Jane Doe" required>
+          <label class="block text-sm font-medium text-black mb-1">Provider Full Name</label>
+          <input type="text" name="name" class="input w-full p-2 mb-4" placeholder="e.g. Jelita Mulenga" required>
           <label class="block text-sm font-medium text-black mb-1">Type of Service</label>
           <input type="text" name="service" class="input w-full p-2 mb-4" placeholder="e.g. Tailor" required>
-          <label class="block text-sm font-medium text-black mb-1">Phone Number</label>
+          <label class="block text-sm font-medium text-black mb-1">Provider Phone Number</label>
           <input type="tel" name="phone" class="input w-full p-2 mb-4" placeholder="e.g. +2609…" required>
           <label class="block text-sm font-medium text-black mb-1">Location (e.g. Lusaka, Kitwe)</label>
-          <input type="text" name="location" class="input w-full p-2 mb-4" placeholder="Your Area" required>
+          <input type="text" name="location" class="input w-full p-2 mb-4" placeholder="Where to find provider" required>
           <label class="block text-sm font-medium text-black mb-1">Attach Photo (optional)</label>
           <input type="file" name="photo" class="w-full mb-4" accept="image/*">
           <label class="block text-sm font-medium text-black mb-1">Your Message</label>
@@ -106,7 +106,7 @@
 
   <!-- Map Section Title -->
   <section class="px-6 lg:px-24 pt-16 animate-fade">
-    <h2 class="text-black text-3xl font-semibold mb-6">Your Map to Zambia’s Trusted Service Providers</h2>
+    <h2 class="text-black text-5xl font-bold mb-6">Your Map to Zambia’s Trusted Service Providers</h2>
     <div class="rounded-lg overflow-hidden shadow-lg">
       <iframe src="https://www.google.com/maps/d/embed?mid=1LQXoxhIWpbgSo7cwGqGIzcfA8jWEMM4&ehbc=2E312F" width="100%" height="480" class="block"></iframe>
     </div>
