@@ -3,7 +3,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ZedVouched</title>
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
       --orange-bg: #F27024;
@@ -19,7 +22,6 @@
     }
     body {
       font-family: 'Inter', sans-serif;
-      /* Gradient background matching mock: angle 135deg from #FF8A00 to #FF5E00 */
       background: linear-gradient(135deg, var(--orange-grad1) 0%, var(--orange-grad2) 100%);
       color: var(--text-black);
       margin: 0;
@@ -30,22 +32,14 @@
       font-size: 16px;
       line-height: 24px;
     }
-    h1 {
-      font-size: 56px;
-      line-height: 64px;
-    }
-    h2 {
-      font-size: 56px;
-      line-height: 64px;
-    }
+    h1 { font-size: 56px; line-height: 64px; }
+    h2 { font-size: 56px; line-height: 64px; }
     .btn-green {
       background-color: var(--btn-green);
       transition: background-color 0.3s;
       border-radius: 8px;
     }
-    .btn-green:hover {
-      background-color: var(--btn-green-h);
-    }
+    .btn-green:hover { background-color: var(--btn-green-h); }
     .animate-fade {
       animation: fadeIn 0.8s ease-in-out;
     }
@@ -54,7 +48,6 @@
       to { opacity: 1; transform: translateY(0); }
     }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Header -->
@@ -64,7 +57,15 @@
     </div>
     <nav class="hidden lg:flex items-center space-x-6 text-base font-medium">
       <div class="relative group">
-        <button class="flex items-center space-x-1">Technical Services <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg></button>
+        <button class="flex items-center space-x-1">Technical Services<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg></button>
+        <div class="absolute hidden group-hover:block bg-white text-black mt-2 rounded shadow-lg w-48">
+          <a href="#plumber" class="block px-4 py-2 hover:bg-gray-100">Plumber</a>
+          <a href="#mechanic" class="block px-4 py-2 hover:bg-gray-100">Mechanic</a>
+          <a href="#welder" class="block px-4 py-2 hover:bg-gray-100">Welder</a>
+          <a href="#carpenter" class="block px-4 py-2 hover:bg-gray-100">Carpenter</a>
+          <a href="#electrician" class="block px-4 py-2 hover:bg-gray-100">Electrician</a>
+          <a href="#technician" class="block px-4 py-2 hover:bg-gray-100">Technician</a>
+        </div>
       </div>
       <div class="relative group">
         <button class="flex items-center space-x-1">Design Services <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg></button>
