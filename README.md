@@ -26,7 +26,7 @@
     }
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, var(--orange-grad1) 0%, var(--orange-grad2) 100%);
+      background: linear-gradient(200deg, var(--orange-grad1) 50%, var(--orange-grad2) 200%);
       color: var(--text-black);
       margin: 0;
     }
