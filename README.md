@@ -31,7 +31,7 @@
       margin: 0;
     }
     .bg-semi-transparent-card {
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.3);
     }
     .bg-sec-bg {
       background-color: var(--form-bg);
@@ -66,7 +66,6 @@
   <header class="flex items-center justify-between py-4 px-6 bg-transparent">
     <div class="flex items-center space-x-3">
       <img src="./images/zedvouched_logo.png" alt="ZedVouched Logo" class="h-12" />
-      <span class="text-xl font-semibold text-black">ZedVouched</span>
     </div>
     <nav class="hidden lg:flex items-center space-x-6 text-base font-medium">
       <div class="relative group">
