@@ -90,7 +90,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="flex flex-col lg:flex-row items-center px-4 lg:px-0 pt-12 animate-fade">
+  <section class="flex flex-col lg:flex-row items-center px-0 lg:px-0 pt-12 animate-fade">
     <!-- Text Block -->
     <div class="lg:w-1/2 mb-12 lg:mb-0 flex flex-col justify-center">
       <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
@@ -131,7 +131,7 @@
   </section>
 
   <!-- Map & Tagline Section -->
-  <section class="px-4 lg:px-0 pt-16 animate-fade">
+  <section class="px-0 lg:px-0 pt-16 animate-fade">
     <div class="flex flex-col lg:flex-row items-center gap-8">
       <!-- Left Text Block (30%) -->
       <div style="flex: 0 0 30%;" class="flex items-center">
