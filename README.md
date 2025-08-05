@@ -31,7 +31,7 @@
       margin: 0;
     }
     .bg-semi-transparent-card {
-      background-color: rgba(255, 255, 255, 0.7);
+      background-color: rgba(255, 255, 255, 0.5);
     }
     .bg-sec-bg {
       background-color: var(--form-bg);
