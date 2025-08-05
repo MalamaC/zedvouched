@@ -95,7 +95,7 @@
   <section class="flex flex-col lg:flex-row items-center px-0 lg:px-0 pt-12 animate-fade">
     <!-- Text Block -->
     <div class="lg:w-1/2 mb-12 lg:mb-0 flex flex-col justify-center">
-      <h1 class="font-bold mb-6 leading-tight" style="font-size: 6rem;">
+      <h1 class="font-bold mb-6 no-underline leading-tight" style="font-size: 6rem;">
         Let’s fill the<br />Zambian map, together
       </h1>
       <blockquote class="bg-semi-transparent-card p-4 rounded mb-6 max-w-md text-gray-800">
@@ -137,7 +137,7 @@
     <div class="flex flex-col lg:flex-row items-center gap-8">
       <!-- Left Text Block (30%) -->
       <div style="flex: 0 0 30%;" class="flex items-center">
-        <h2 class="font-bold mb-6 leading-tight" style="font-size: 6rem;">
+        <h2 class="font-bold mb-6 no-underline leading-tight" style="font-size: 6rem;">
           Your Map to<br />Zambia’s Trusted Service Providers
         </h2>
       </div>
