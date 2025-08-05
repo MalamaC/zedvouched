@@ -12,6 +12,9 @@
 
   <!-- Custom Styles -->
   <style>
+      a {
+        text-decoration: none;
+      }
     :root {
       --orange-bg: #F27024;
       --orange-grad1: #F27024;
