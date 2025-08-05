@@ -95,7 +95,7 @@
   <section class="flex flex-col lg:flex-row items-center px-0 lg:px-0 pt-12 animate-fade">
     <!-- Text Block -->
     <div class="lg:w-1/2 mb-12 lg:mb-0 flex flex-col justify-center">
-      <h1 class="text-10xl md:text-12xl lg:text-14xl font-bold mb-6 leading-tight">
+      <h1 class="font-bold mb-6 leading-tight" style="font-size: 6rem;">
         Let’s fill the<br />Zambian map, together
       </h1>
       <blockquote class="bg-semi-transparent-card p-4 rounded mb-6 max-w-md text-gray-800">
