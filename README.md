@@ -137,7 +137,7 @@
     <div class="flex flex-col lg:flex-row items-center gap-8">
       <!-- Left Text Block (30%) -->
       <div style="flex: 0 0 30%;" class="flex items-center">
-        <h2 class="font-bold mb-6 leading-tight" style="font-size: 4rem;">
+        <h2 class="font-bold mb-6 leading-tight" style="font-size: 6rem;">
           Your Map to<br />Zambia’s Trusted Service Providers
         </h2>
       </div>
