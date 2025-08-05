@@ -65,7 +65,7 @@
   <!-- Header -->
   <header class="flex items-center justify-between py-4 px-6 bg-transparent">
     <div class="flex items-center space-x-3">
-      <img src="./images/logo_nobackground.png" alt="ZedVouched Logo" class="h-12" />
+      <img src="./images/zedvouched_logo.png" alt="ZedVouched Logo" class="h-12" />
       <span class="text-xl font-semibold text-black">ZedVouched</span>
     </div>
     <nav class="hidden lg:flex items-center space-x-6 text-base font-medium">
@@ -93,7 +93,7 @@
   <section class="flex flex-col lg:flex-row items-center px-0 lg:px-0 pt-12 animate-fade">
     <!-- Text Block -->
     <div class="lg:w-1/2 mb-12 lg:mb-0 flex flex-col justify-center">
-      <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+      <h1 class="text-10xl md:text-12xl lg:text-14xl font-bold mb-6 leading-tight">
         Let’s fill the<br />Zambian map, together
       </h1>
       <blockquote class="bg-semi-transparent-card p-4 rounded mb-6 max-w-md text-gray-800">
@@ -135,7 +135,7 @@
     <div class="flex flex-col lg:flex-row items-center gap-8">
       <!-- Left Text Block (30%) -->
       <div style="flex: 0 0 30%;" class="flex items-center">
-        <h2 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+        <h2 class="text-10xl md:text-12xl lg:text-14xl font-bold leading-tight">
           Your Map to<br />Zambia’s Trusted Service Providers
         </h2>
       </div>
