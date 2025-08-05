@@ -59,7 +59,9 @@
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
     }
-    h1, h2 {text-decoration: none;}
+    h1, h2 {
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
